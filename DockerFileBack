@@ -1,0 +1,4 @@
+FROM openjdk:8-jdk-alpine
+EXPOSE 2000
+ADD target\banking-0.0.1-SNAPSHOT.jar bna.jar
+ENTRYPOINT ["java","-jar","bna.jar"]
